@@ -1,0 +1,25 @@
+/* media */
+$media-list: (
+		'xxs': 375,
+		'xs': 560,
+		'sm': 800,
+		'md': 992,
+		'mdHeader': 1079,
+		'lg': 1279,
+		'xl': 1599,
+		'xxl': 1920
+);
+
+/* шрифты */
+$mak: 'Mak', sans-serif;
+$mainFont: 'Jost', sans-serif;
+$FuturaPT: 'FuturaPT', sans-serif;
+
+/* цвета */
+$fonBlack: #1B1F22;
+$white: #fff;
+$red: #FF3E41;
+$grey: #CBCECF;
+$greyBlack: #7F8589;
+$greyLight: #F5F5F5;
+$mainDark: #1B1F22;
