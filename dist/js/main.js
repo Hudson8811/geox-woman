@@ -79,23 +79,30 @@ jQuery(function () {
 		}
 		function getCheckValue() {
 			let value =[] 
+			let sortValue = []
+			
 			$('.js-custom-radio:checked').each(function() {
 				value.push($(this).val());
 			});
 			value.sort().forEach(function(item, index, array) {
+				
 				if ((index > 0) && (array[index - 1] == item)) {
 						filterIndex = item
-						getRightAnswer(filterIndex)
+						// filterIndex = []				
+						// filterIndex.push(item)
+						sortValue.push(filterIndex)
+						// console.log(filterIndex)
+						// getRightAnswer(filterIndex)
 				}
+				
 			});
+			getRightAnswer(sortValue[0])
 		}
 		function pushCheckFalse() {
 			$(".js-custom-radio:checked").prop('checked', false);
 		}
 		function getRightAnswer(i) {
-			let key = i;
-			console.log(allAnswer)
-			console.log(key)
+			let key = i
 			switch(key) {
 				case "1": 
 					allAnswer[0].style.display = "flex";
@@ -107,7 +114,7 @@ jQuery(function () {
 					allAnswer[2].style.display = "flex";
 				break;
 			}
-	
+			return;
 		}
 	})
 
