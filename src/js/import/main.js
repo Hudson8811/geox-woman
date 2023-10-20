@@ -85,5 +85,51 @@ jQuery(function () {
 			return;
 		}
 	})
-
+		new Skroll()
+		.add(".city-style__picture", {
+			animation: "fadeInRight",
+			delay: 200,
+			duration: 750
+		})
+		.add(".city-style__list", {
+			animation: "fadeInLeft",
+			delay: 200,
+			duration: 750
+		})
+		.add(".city-style__desc", {
+			animation: "fadeInLeft",
+			delay: 200,
+			duration: 750
+		})
+		.add(".trendy-style__picture", {
+			animation: "fadeInRight",
+			delay: 200,
+			duration: 750
+		})
+		.add(".trendy-style__desc", {
+			animation: "fadeInLeft",
+			delay: 200,
+			duration: 750
+		})
+		.add(".officecore__picture", {
+			animation: "fadeInRight",
+			delay: 200,
+			duration: 750
+		})
+		.add(".officecore__desc", {
+			animation: "fadeInLeft",
+			delay: 200,
+			duration: 750
+		})
+		.add(".sport-style__picture", {
+			animation: "fadeInRight",
+			delay: 200,
+			duration: 750
+		})
+		.add(".sport-style__desc", {
+			animation: "fadeInLeft",
+			delay: 200,
+			duration: 750
+		})
+		.init();
 });

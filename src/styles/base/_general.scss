@@ -437,7 +437,7 @@ body {
                 text-align: center !important;
                 font-size: vw(70);
                 @include max(sm) {
-                    font-size: vw2(70 );
+                    font-size: vw2(70);
                 }
             }
             .test__question__numb {
@@ -814,7 +814,7 @@ body {
                 margin-right: auto;
                 @include max(sm) {
                     max-width: 100%;
-                    font-size: vw2(20);
+                    font-size: vw2(19);
                     margin-bottom: vw2(27);
                 }   
             }
@@ -1046,7 +1046,7 @@ body {
         justify-content: flex-start;
         align-items: flex-start;
         padding-top: vw(63);
-        min-height: vw(699);
+        min-height: vw(945);
         width: 100%;
         background-image: url(../img/city-style__bottom.png);
         background-position: bottom center;
@@ -1095,13 +1095,13 @@ body {
             display: block;
             color: #000;
             text-align: center;
-            font-size: vw(18);
+            font-size: vw(24);
             font-style: normal;
             font-weight: 400;
             line-height: 167.5%;
             margin-bottom: vw(34);
             @include max(sm) {
-                font-size: vw2(17);
+                font-size: vw2(23);
                 margin-bottom: vw2(30);
             }
             span {
@@ -1209,12 +1209,12 @@ body {
           color: #000;
           text-align: center;
           font-family: Jost;
-          font-size: vw(20);
+          font-size: vw(24);
           font-style: normal;
           font-weight: 400;
           line-height: 167.5%; 
           @include max(sm) {
-            font-size: vw2(17);
+            font-size: vw2(23);
             max-width: vw2(607);
           } 
         }
@@ -1329,13 +1329,13 @@ body {
           color: #000;
           text-align: center;
           font-family: Jost;
-          font-size: vw(20);
+          font-size: vw(24);
           font-style: normal;
           font-weight: 400;
           line-height: 167.5%; 
           margin-bottom: vw(20); 
           @include max(sm) {
-            font-size: vw2(17);
+            font-size: vw2(23);
             margin-bottom: vw2(25);
             max-width: vw2(706);
           } 
@@ -1451,13 +1451,13 @@ body {
           color: #000;
           text-align: center;
           font-family: Jost;
-          font-size: vw(20);
+          font-size: vw(24);
           font-style: normal;
           font-weight: 400;
           line-height: 167.5%; 
           margin-bottom: vw(20); 
           @include max(sm) {
-            font-size: vw2(17);
+            font-size: vw2(23);
             margin-bottom: vw2(25);
             max-width: vw2(706);
           } 
