@@ -1107,12 +1107,12 @@ body {
             span {
                 color: #337E88;
                 text-align: center;
-                font-size: vw(18);
+                font-size: vw(24);
                 font-style: normal;
                 font-weight: 400;
                 line-height: 167.5%;
                 @include max(sm) {
-                    font-size: vw2(17);
+                    font-size: vw2(23);
                     margin-bottom: vw2(30);
                 }
             }

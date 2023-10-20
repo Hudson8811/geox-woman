@@ -2992,7 +2992,7 @@ body {
 .city-style__desc__text span {
   color: #337E88;
   text-align: center;
-  font-size: 0.9375vw;
+  font-size: 1.25vw;
   font-style: normal;
   font-weight: 400;
   line-height: 167.5%;
@@ -3803,7 +3803,7 @@ body {
   }
 
   .city-style__desc__text span {
-    font-size: 2.125vw;
+    font-size: 2.875vw;
     margin-bottom: 3.75vw;
   }
 
@@ -3913,6 +3913,7 @@ body {
 
   .footer {
     padding-top: 3.75vw;
+    min-height: 18vw;
   }
 
   .footer__lists--string {

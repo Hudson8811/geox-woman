@@ -10,6 +10,7 @@
 	color: #fff;
 	@include max(sm) {
 		padding-top: vw2(30);
+		min-height: vw2(144);
 	}
 	&__lists {
 		&--row {
