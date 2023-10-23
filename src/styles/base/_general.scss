@@ -938,7 +938,7 @@ body {
         justify-content: flex-start;
         align-items: center;
         flex-flow: column nowrap;
-        width: calc(100% - vw(694));
+        width: calc(100% - vw(855));
         @include max(sm) {
             padding-top: vw2(53);
             padding-left: vw2(43);
@@ -1010,7 +1010,7 @@ body {
         position: relative;
         width: 100%;
 
-        max-width: vw(755);
+        max-width: vw(855);
         display: block;
         @include max(sm) {
             margin-bottom: vw(0);
@@ -1083,8 +1083,8 @@ body {
         align-items: flex-start;
         width: 100%;
         flex-flow: column nowrap;
-        max-width: vw(819);
-        margin-left: vw(40);
+        max-width: 60vw;
+        margin-left: vw(58);
         @include max(sm) {
             max-width: vw2(674);
             margin-left: auto;

@@ -7,7 +7,7 @@ jQuery(function () {
 			// watchSlidesVisibility: true,
 			// watchSlidesProgress: true,
 			// preventInteractionOnTransition: true,
-			allowTouchMove: false,
+			// allowTouchMove: false,
 			// loop: true,
 			slidesPerView: 1,
 			navigation: {
@@ -25,111 +25,109 @@ jQuery(function () {
 					getCheckValue();
 				}
 			}, 800);
-
-
 		});
-		let allAnswer = document.querySelectorAll(".test__answer");
-		let  btnTestAnswer = document.querySelectorAll(".test__answer__list__button");
+		// let allAnswer = document.querySelectorAll(".test__answer");
+		// let  btnTestAnswer = document.querySelectorAll(".test__answer__list__button");
 		
-		btnTestAnswer.forEach((item)=>{
-			item.addEventListener("click", function() {
-				startAgain()
-			})
-		}) 
+		// btnTestAnswer.forEach((item)=>{
+		// 	item.addEventListener("click", function() {
+		// 		startAgain()
+		// 	})
+		// }) 
 	
 		
-		function startAgain() {
-			reviewsAll.slideTo(0);
-			allAnswer.forEach((item)=>{
-				item.style.display = "none";
-			});
-			pushCheckFalse()
-		}
-		function getCheckValue() {
-			let value =[] 
-			let sortValue = []
+		// function startAgain() {
+		// 	// reviewsAll.slideTo(0);
+		// 	allAnswer.forEach((item)=>{
+		// 		item.style.display = "none";
+		// 	});
+		// 	pushCheckFalse()
+		// }
+		// function getCheckValue() {
+		// 	let value =[] 
+		// 	let sortValue = []
 			
-			$('.js-custom-radio:checked').each(function() {
-				value.push($(this).val());
-			});
-			value.sort().forEach(function(item, index, array) {
+		// 	$('.js-custom-radio:checked').each(function() {
+		// 		value.push($(this).val());
+		// 	});
+		// 	value.sort().forEach(function(item, index, array) {
 				
-				if ((index > 0) && (array[index - 1] == item)) {
-						filterIndex = item
-						// filterIndex = []				
-						// filterIndex.push(item)
-						sortValue.push(filterIndex)
-						// console.log(filterIndex)
-						// getRightAnswer(filterIndex)
-				}
+		// 		if ((index > 0) && (array[index - 1] == item)) {
+		// 				filterIndex = item
+		// 				// filterIndex = []				
+		// 				// filterIndex.push(item)
+		// 				sortValue.push(filterIndex)
+		// 				// console.log(filterIndex)
+		// 				// getRightAnswer(filterIndex)
+		// 		}
 				
-			});
-			getRightAnswer(sortValue[0])
-		}
-		function pushCheckFalse() {
-			$(".js-custom-radio:checked").prop('checked', false);
-		}
-		function getRightAnswer(i) {
-			let key = i
-			switch(key) {
-				case "1": 
-					allAnswer[0].style.display = "flex";
-				break;
-				case "2": 
-					allAnswer[1].style.display = "flex";
-				break;
-				case "3": 
-					allAnswer[2].style.display = "flex";
-				break;
-			}
-			return;
-		}
+		// 	});
+		// 	getRightAnswer(sortValue[0])
+		// }
+		// function pushCheckFalse() {
+		// 	$(".js-custom-radio:checked").prop('checked', false);
+		// }
+		// function getRightAnswer(i) {
+		// 	let key = i
+		// 	switch(key) {
+		// 		case "1": 
+		// 			allAnswer[0].style.display = "flex";
+		// 		break;
+		// 		case "2": 
+		// 			allAnswer[1].style.display = "flex";
+		// 		break;
+		// 		case "3": 
+		// 			allAnswer[2].style.display = "flex";
+		// 		break;
+		// 	}
+		// 	return;
+		// }
 	})
-		new Skroll()
-		.add(".city-style__picture", {
-			animation: "fadeInRight",
-			delay: 200,
-			duration: 750
-		})
-		.add(".city-style__list", {
-			animation: "fadeInLeft",
-			delay: 200,
-			duration: 750
-		})
-		.add(".city-style__desc", {
-			animation: "fadeInLeft",
-			delay: 200,
-			duration: 750
-		})
-		.add(".trendy-style__picture", {
-			animation: "fadeInRight",
-			delay: 200,
-			duration: 750
-		})
-		.add(".trendy-style__desc", {
-			animation: "fadeInLeft",
-			delay: 200,
-			duration: 750
-		})
-		.add(".officecore__picture", {
-			animation: "fadeInRight",
-			delay: 200,
-			duration: 750
-		})
-		.add(".officecore__desc", {
-			animation: "fadeInLeft",
-			delay: 200,
-			duration: 750
-		})
-		.add(".sport-style__picture", {
-			animation: "fadeInRight",
-			delay: 200,
-			duration: 750
-		})
-		.add(".sport-style__desc", {
-			animation: "fadeInLeft",
-			delay: 200,
-			duration: 750
-		})
-		.init();
+		// new Skroll()
+		// .add(".city-style__picture", {
+		// 	animation: "fadeInRight",
+		// 	delay: 200,
+		// 	duration: 750
+		// })
+		// .add(".city-style__list", {
+		// 	animation: "fadeInLeft",
+		// 	delay: 200,
+		// 	duration: 750
+		// })
+		// .add(".city-style__desc", {
+		// 	animation: "fadeInLeft",
+		// 	delay: 200,
+		// 	duration: 750
+		// })
+		// .add(".trendy-style__picture", {
+		// 	animation: "fadeInRight",
+		// 	delay: 200,
+		// 	duration: 750
+		// })
+		// .add(".trendy-style__desc", {
+		// 	animation: "fadeInLeft",
+		// 	delay: 200,
+		// 	duration: 750
+		// })
+		// .add(".officecore__picture", {
+		// 	animation: "fadeInRight",
+		// 	delay: 200,
+		// 	duration: 750
+		// })
+		// .add(".officecore__desc", {
+		// 	animation: "fadeInLeft",
+		// 	delay: 200,
+		// 	duration: 750
+		// })
+		// .add(".sport-style__picture", {
+		// 	animation: "fadeInRight",
+		// 	delay: 200,
+		// 	duration: 750
+		// })
+		// .add(".sport-style__desc", {
+		// 	animation: "fadeInLeft",
+		// 	delay: 200,
+		// 	duration: 750
+		// })
+		// .init();
 });

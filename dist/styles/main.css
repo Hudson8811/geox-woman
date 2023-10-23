@@ -2975,7 +2975,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-flow: column nowrap;
-  width: calc(100% - 36.1458333333vw);
+  width: calc(100% - 44.53125vw);
 }
 
 .city-style__list__title {
@@ -3031,7 +3031,7 @@ body {
 .city-style__picture {
   position: relative;
   width: 100%;
-  max-width: 39.3229166667vw;
+  max-width: 44.53125vw;
   display: block;
 }
 
@@ -3082,8 +3082,8 @@ body {
   align-items: flex-start;
   width: 100%;
   flex-flow: column nowrap;
-  max-width: 42.65625vw;
-  margin-left: 2.0833333333vw;
+  max-width: 60vw;
+  margin-left: 3.0208333333vw;
 }
 
 .city-style__desc__text {
