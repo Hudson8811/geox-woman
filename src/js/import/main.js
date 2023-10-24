@@ -17,7 +17,8 @@ jQuery(function () {
 
 		});
 
-		$(".js-custom-radio").on( 'change', function() {		
+		$(".js-custom-radio").on( 'change', function() {
+			$(this).blur()
 			setTimeout(function(){ 
 				reviewsAll.slideNext(800, false);
 				let indexActiveSlide = reviewsAll.previousIndex;
